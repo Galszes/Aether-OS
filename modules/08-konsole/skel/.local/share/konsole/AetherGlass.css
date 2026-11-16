@@ -1,0 +1,21 @@
+QTabWidget, QTabWidget::pane, QTabWidget::tab-bar, QTabBar {
+    background: transparent;
+    border: none;
+}
+QTabBar::tab {
+    min-width: 6em;
+    max-width: 25em;
+    color: #ededed;
+    background: rgba(24, 24, 24, 100);
+    border: 1px solid rgba(255, 255, 255, 25);
+    border-radius: 8px;
+    padding: 5px 12px;
+    margin: 3px 3px;
+}
+QTabBar::tab:selected {
+    background: rgba(100, 100, 100, 120);
+    border-color: rgba(255, 255, 255, 65);
+}
+QTabBar::tab:hover {
+    background: rgba(120, 120, 120, 90);
+}

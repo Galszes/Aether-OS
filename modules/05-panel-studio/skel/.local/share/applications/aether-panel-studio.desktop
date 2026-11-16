@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Aether Panel Studio
+Comment=Atur warna, rounded, transparansi dan shadow panel KDE
+Exec=/home/aether/.local/bin/aether-panel-studio
+Icon=preferences-desktop-theme
+Terminal=false
+Categories=Settings;DesktopSettings;Qt;
+StartupNotify=true
+StartupWMClass=app.py

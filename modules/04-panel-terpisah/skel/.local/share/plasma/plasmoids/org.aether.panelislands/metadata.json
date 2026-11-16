@@ -1,0 +1,13 @@
+{
+    "KPlugin": {
+        "Id": "org.aether.panelislands",
+        "Name": "Aether Panel Islands",
+        "Description": "Rounded backgrounds for application and clock groups; empty spacers stay clear",
+        "Version": "1.0.0",
+        "License": "MIT",
+        "Category": "Utilities",
+        "Icon": "preferences-desktop-theme"
+    },
+    "X-Plasma-API": "declarativeappletscript",
+    "X-Plasma-MainScript": "ui/main.qml"
+}

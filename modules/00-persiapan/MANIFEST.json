@@ -1,0 +1,15 @@
+{
+  "module": "00-persiapan",
+  "files": [
+    {
+      "path": "root/usr/local/lib/aether-remaster/relocate.py",
+      "bytes": 1664,
+      "sha256": "c42ba8357ab4c1e10df71ba14475d45a0bb2396b58205355b0fa2bee85432fde"
+    },
+    {
+      "path": "skel/.config/plasma-workspace/env/00-aether-remaster-relocate.sh",
+      "bytes": 277,
+      "sha256": "9a779dce5e792214899137e075f86d7d1e1de5152f49f4e73f0b3f15db103abe"
+    }
+  ]
+}

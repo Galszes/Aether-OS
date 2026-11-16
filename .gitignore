@@ -1,0 +1,9 @@
+/private-assets/
+/__pycache__/
+**/__pycache__/
+*.pyc
+*.tar.gz
+!/payloads/*.tar.gz
+*.iso
+*.log
+/.cache/

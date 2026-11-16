@@ -1,0 +1,1 @@
+{"KPlugin":{"Id":"aether-compat-blur","Name":"Aether Compatibility Blur","Description":"Compatibility blur for Plasma 5 X11","Version":"0.1","License":"GPL-2.0-or-later","EnabledByDefault":false},"X-KDE-Ordering":20,"X-KDE-ServiceTypes":["KWin/Effect"]}

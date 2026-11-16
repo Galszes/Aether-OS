@@ -1,0 +1,25 @@
+{
+  "module": "08-konsole",
+  "files": [
+    {
+      "path": "skel/.config/konsolerc",
+      "bytes": 201,
+      "sha256": "8a1d82d51b5d3b7c8f413dec4fe225a1f94c4c156f87cfc0238a98c976a32b6e"
+    },
+    {
+      "path": "skel/.local/share/konsole/Aether Glass.profile",
+      "bytes": 167,
+      "sha256": "88f664a8de08540a055b324e6a8ff40765bb992b6ddf681c66ff11941dbadfe0"
+    },
+    {
+      "path": "skel/.local/share/konsole/AetherGlass.colorscheme",
+      "bytes": 1109,
+      "sha256": "a043f487b19101edc143f9e75ed2319c2eda46128e97f0362f15c72924abd119"
+    },
+    {
+      "path": "skel/.local/share/konsole/AetherGlass.css",
+      "bytes": 517,
+      "sha256": "bc528f80c8a9e438b6f699a04e12b37d45a0cea9bfee1bfb93beb7bff6061063"
+    }
+  ]
+}

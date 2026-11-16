@@ -1,0 +1,15 @@
+{
+  "module": "07-splash",
+  "files": [
+    {
+      "path": "skel/.config/aether-splash-studio.json",
+      "bytes": 451,
+      "sha256": "e451beb45d6cb60db04cc7adae4c446e2f22f2af0ff45c26775e7540e5c0367b"
+    },
+    {
+      "path": "skel/.config/ksplashrc",
+      "bytes": 59,
+      "sha256": "4ff6a7002d7a0f731c890734c7e071c9d1668871c1c8656c8e6fcd0a59becb4d"
+    }
+  ]
+}

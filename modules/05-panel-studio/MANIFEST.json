@@ -1,0 +1,70 @@
+{
+  "module": "05-panel-studio",
+  "files": [
+    {
+      "path": "skel/.config/aether-panel-studio.json",
+      "bytes": 566,
+      "sha256": "eff626ed4da6d06c60e3b858f9a69189ed1465b1d154e76748becf40bcb7a008"
+    },
+    {
+      "path": "skel/.local/bin/aether-panel-studio",
+      "bytes": 88,
+      "sha256": "4d6f07981d6168e27e572b518bdc036d5b45a912fe17ba89b9a3bead5e8fbfac"
+    },
+    {
+      "path": "skel/.local/share/applications/aether-panel-studio.desktop",
+      "bytes": 297,
+      "sha256": "9b62ba285a583fd027c8fdcacf80edb0f3d74cbeb092fb2a65ca2aaa145aa4e8"
+    },
+    {
+      "path": "skel/Applications/AetherPanelStudio/app.py",
+      "bytes": 23210,
+      "sha256": "ff4796d39cdca507034747527c01baa14a10ee91d3f8bddbfed75eb343262fc2"
+    },
+    {
+      "path": "skel/Applications/AetherPanelStudio/apply-sddm-branding.sh",
+      "bytes": 946,
+      "sha256": "3f0af8d5c143ed1e69cecfe3a5936711397c5d4e3d720de14508b5908a5396b5"
+    },
+    {
+      "path": "skel/Applications/AetherPanelStudio/backend.py",
+      "bytes": 21817,
+      "sha256": "b7430793700d79b2d977ecffe47213e8be56a2b299ea459ec5c3c41f9d0dc175"
+    },
+    {
+      "path": "skel/Applications/AetherPanelStudio/branding.py",
+      "bytes": 22813,
+      "sha256": "58f02657b1745900baa4cef2b10681c94c6be1cf2cddcce1e10031232cfa4614"
+    },
+    {
+      "path": "skel/Applications/AetherPanelStudio/data/aether-splash-logo.svg",
+      "bytes": 441,
+      "sha256": "726aaf7e68dacc1eec1f87c8592cbb5445d9e4258ea3bbd82faf5331b171f134"
+    },
+    {
+      "path": "skel/Applications/AetherPanelStudio/data/main.qml",
+      "bytes": 10400,
+      "sha256": "2f2a022ba51240d48531ae56cac86531b06e5e29e078e5baabb5a5f3d5a8e70d"
+    },
+    {
+      "path": "skel/Applications/AetherPanelStudio/data/main.xml",
+      "bytes": 1069,
+      "sha256": "f13682bcd448ab34f149869d0daf43d95eb5bc14d4d9097b551dab6d4287dfdf"
+    },
+    {
+      "path": "skel/Applications/AetherPanelStudio/panel_blur.py",
+      "bytes": 1702,
+      "sha256": "324057a2fcedca948baa9e79ae9ceffaeccddf37ddbc615c50f519ecad3d30fc"
+    },
+    {
+      "path": "skel/Applications/AetherPanelStudio/splash.py",
+      "bytes": 19424,
+      "sha256": "08522b9bc024aed161dc584e7d08d2ec31e8b6b4177732712dfae5cd3e08570f"
+    },
+    {
+      "path": "skel/Applications/AetherPanelStudio/titlebar.py",
+      "bytes": 7301,
+      "sha256": "402c1150a2e3ba3fc3268ebbbd56cf04bbaf248e03380e8541b90b36370b4957"
+    }
+  ]
+}

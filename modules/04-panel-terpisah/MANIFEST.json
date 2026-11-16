@@ -1,0 +1,35 @@
+{
+  "module": "04-panel-terpisah",
+  "files": [
+    {
+      "path": "config/plasma-layout.ini",
+      "bytes": 6723,
+      "sha256": "e781553cbcbbca64786c3f90dc8b8975eef15ff5cc53d4b09352a713fda6c764"
+    },
+    {
+      "path": "skel/.local/share/plasma/plasmoids/org.aether.panelislands/contents/config/config.qml",
+      "bytes": 208,
+      "sha256": "0882b2ed18be3ddf968fa77734aa9b1c31ba86def3f8fd4abec332d4577715c8"
+    },
+    {
+      "path": "skel/.local/share/plasma/plasmoids/org.aether.panelislands/contents/config/main.xml",
+      "bytes": 1069,
+      "sha256": "f13682bcd448ab34f149869d0daf43d95eb5bc14d4d9097b551dab6d4287dfdf"
+    },
+    {
+      "path": "skel/.local/share/plasma/plasmoids/org.aether.panelislands/contents/ui/configGeneral.qml",
+      "bytes": 1827,
+      "sha256": "d8bd765f781cf2c6acd7d1e3efb2eafb9c1bd260d877a99d785c620268cf53b9"
+    },
+    {
+      "path": "skel/.local/share/plasma/plasmoids/org.aether.panelislands/contents/ui/main.qml",
+      "bytes": 10400,
+      "sha256": "2f2a022ba51240d48531ae56cac86531b06e5e29e078e5baabb5a5f3d5a8e70d"
+    },
+    {
+      "path": "skel/.local/share/plasma/plasmoids/org.aether.panelislands/metadata.json",
+      "bytes": 433,
+      "sha256": "8e678b2bd5325937c854fba388f2b790dd8fc866cc579a74d8a4fed077ae2aca"
+    }
+  ]
+}

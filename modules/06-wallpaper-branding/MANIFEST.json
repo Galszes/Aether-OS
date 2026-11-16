@@ -1,0 +1,30 @@
+{
+  "module": "06-wallpaper-branding",
+  "files": [
+    {
+      "path": "config/plasma-layout.ini",
+      "bytes": 347,
+      "sha256": "6f33d21cfb9414766509a16670cb71f4c7a257e0f5e46e6b094eefc37c554fd3"
+    },
+    {
+      "path": "root/etc/sddm.conf.d/zz-aether-branding.conf",
+      "bytes": 28,
+      "sha256": "dd88c44025f2b724d2a04022cba306868b7f71b7e4b140f70b7e841f9d157e09"
+    },
+    {
+      "path": "skel/.config/aether-panel-branding.json",
+      "bytes": 261,
+      "sha256": "63fbc279b238c0cc2d93cf1ece9f36fa6648f1aa19fe573332791fdd3bbc499e"
+    },
+    {
+      "path": "skel/.config/kcm-about-distrorc",
+      "bytes": 87,
+      "sha256": "6aa7334dec16725f582d20a76d0d510376f7ad352c5062c9bb9606a17ec3ba96"
+    },
+    {
+      "path": "skel/.config/kscreenlockerrc",
+      "bytes": 320,
+      "sha256": "01751505d8fc959aedf2f16ff6ba051f1d88bcae267b29bfadd39f8f1bc151bb"
+    }
+  ]
+}

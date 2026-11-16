@@ -1,0 +1,10 @@
+{
+  "module": "02-ikon",
+  "files": [
+    {
+      "path": "config/kdeglobals.ini",
+      "bytes": 38,
+      "sha256": "12aebe451c39b4e6d01e7a7edfcc3a4330f03429036481eefe129e2a71954684"
+    }
+  ]
+}

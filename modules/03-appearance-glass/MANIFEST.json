@@ -1,0 +1,30 @@
+{
+  "module": "03-appearance-glass",
+  "files": [
+    {
+      "path": "config/kdeglobals.ini",
+      "bytes": 2838,
+      "sha256": "baf28fe039c04f633b53aef646d4720c3e2469cca1cb48fdfc39755a3ef86e56"
+    },
+    {
+      "path": "config/kwinrc.ini",
+      "bytes": 192,
+      "sha256": "52f387e5113ca9e69e091e1391f83eaee474e089b3577bfce04f767d7a17d054"
+    },
+    {
+      "path": "config/plasmarc.ini",
+      "bytes": 18,
+      "sha256": "7c3333ff83731a47e613f26abcadfdb5cd6a83ff12472143951303d9dfeb5bc0"
+    },
+    {
+      "path": "source/compat-blur/blur.cpp",
+      "bytes": 6884,
+      "sha256": "0944f2030621c1eb8bf1deedac11e97b7042bde96253dfed9d141e9aadbed929"
+    },
+    {
+      "path": "source/compat-blur/metadata.json",
+      "bytes": 254,
+      "sha256": "388d399af4162bca41a01debb687657dd3c9a1b8e05e91fec05da78a9ac5edde"
+    }
+  ]
+}

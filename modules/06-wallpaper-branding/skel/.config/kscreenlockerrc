@@ -1,0 +1,11 @@
+[$Version]
+update_info=kscreenlocker.upd:0.1-autolock
+
+[Greeter][Wallpaper][org.kde.image][General]
+Image=file:///home/aether/.local/share/aether-panel-studio/branding/background.png
+PreviewImage=/home/aether/Downloads/wallhaven-jer33w_3840x2160.png
+
+[Greeter]
+Theme=org.aether.lockstudio
+WallpaperPlugin=org.kde.image
+

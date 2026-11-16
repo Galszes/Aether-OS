@@ -1,0 +1,20 @@
+{
+  "module": "01-font",
+  "files": [
+    {
+      "path": "config/kdeglobals.ini",
+      "bytes": 325,
+      "sha256": "ce7a69affaab526e2f969993f3b4114321eeefcd4682743a5175dbb4c4128373"
+    },
+    {
+      "path": "skel/.config/fontconfig/fonts.conf",
+      "bytes": 1230,
+      "sha256": "0dbdc3c70525243fdd1411a87894084d95ed00943e5570bdc9018d23635d4d07"
+    },
+    {
+      "path": "skel/.config/kcmfonts",
+      "bytes": 25,
+      "sha256": "352777f6550e60a23e64506c8b496ab545bf125e40cfa4bcd55eea971b547a0d"
+    }
+  ]
+}

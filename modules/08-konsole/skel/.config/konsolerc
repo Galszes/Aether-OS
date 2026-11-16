@@ -1,0 +1,10 @@
+[Desktop Entry]
+DefaultProfile=Aether Glass.profile
+
+[TabBar]
+TabBarUseUserStyleSheet=true
+TabBarUserStyleSheetFile=file:///home/aether/.local/share/konsole/AetherGlass.css
+
+[UiSettings]
+ColorScheme=
+

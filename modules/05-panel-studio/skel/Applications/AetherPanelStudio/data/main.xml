@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kcfg xmlns="http://www.kde.org/standards/kcfg/1.0">
+  <kcfgfile name=""/>
+  <group name="General">
+    <entry name="splitPanel" type="Int"><default>1</default></entry>
+    <entry name="backgroundColor" type="String"><default>#181818</default></entry>
+    <entry name="backgroundOpacity" type="Double"><default>0.70</default></entry>
+    <entry name="cornerRadius" type="Int"><default>15</default></entry>
+    <entry name="contentMargin" type="Int"><default>8</default></entry>
+    <entry name="borderColor" type="String"><default>#6fa8dc</default></entry>
+    <entry name="borderOpacity" type="Double"><default>0.27</default></entry>
+    <entry name="glassGradient" type="Double"><default>0.10</default></entry>
+    <entry name="shadowColor" type="String"><default>#020a1c</default></entry>
+    <entry name="shadowOpacity" type="Double"><default>0.33</default></entry>
+    <entry name="shadowBlur" type="Int"><default>14</default></entry>
+    <entry name="shadowOffset" type="Int"><default>3</default></entry>
+  </group>
+</kcfg>

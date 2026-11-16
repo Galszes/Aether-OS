@@ -1,0 +1,11 @@
+{
+  "title": "Aether Desktop",
+  "subtitle": "Menyiapkan desktop…",
+  "backgroundColor": "#000000",
+  "accentColor": "#59b8f4",
+  "overlayOpacity": 60,
+  "fontFamily": "Urbanist",
+  "showProgress": true,
+  "background": "/home/aether/.local/share/plasma/look-and-feel/org.aether.splashstudio/contents/splash/images/background.jpeg",
+  "logo": "/home/aether/.local/share/plasma/look-and-feel/org.aether.splashstudio/contents/splash/images/logo.svg"
+}
