@@ -1,12 +1,12 @@
 # Aether Kubuntu Remaster — Sesi Modular & AI Harness
 
-Repositori modifikasi **Kubuntu 24.04 LTS x86_64 (Plasma 5.27)** menjadi **Aether OS** menggunakan **Cubic (Custom Ubuntu ISO Creator)**. Setiap sesi/modul mempunyai `README.md`, payload, dan konfigurasi sendiri, dilengkapi skrip pasca-modul untuk instalasi **Agentic AI Harness**, **Blur Fix**, **Desktop Sync**, dan **Branding Installer**.
+Repositori modifikasi **Kubuntu 24.04 LTS x86_64 (Plasma 5.27)** menjadi **Aether OS** menggunakan **Cubic (Custom Ubuntu ISO Creator)**. Setiap sesi/modul mempunyai `README.md`, payload, dan konfigurasi sendiri, mencakup tema glass/blur, **Agentic AI Harness**, serta branding installer **Aether OS**.
 
 ---
 
-## 1. Urutan Sesi Modular (`modules/`)
+## 1. Urutan Sesi Modular (`00` – `11`)
 
-Salin repositori ini (beserta folder `private-assets/`) ke `/tmp/aether-kubuntu-remaster` di dalam chroot Cubic, lalu jalankan perintah pada masing-masing modul secara berurutan:
+Salin repositori ini (beserta folder `private-assets/` dari Release) ke `/tmp/aether-kubuntu-remaster` di dalam Terminal Cubic, lalu ikuti sesi secara berurutan:
 
 | Sesi | Modul | Hasil Utama |
 |---|---|---|
@@ -19,52 +19,23 @@ Salin repositori ini (beserta folder `private-assets/`) ke `/tmp/aether-kubuntu-
 | **06** | [06 Wallpaper & Branding](modules/06-wallpaper-branding/README.md) | Wallpaper 4K, logo menu/lock/logout/System Information, dan tema SDDM |
 | **07** | [07 Splash](modules/07-splash/README.md) | Splash screen `org.aether.splashstudio` (Urbanist + overlay hitam) |
 | **08** | [08 Konsole](modules/08-konsole/README.md) | Profil terminal Konsole transparan/glass |
-| **09** | [09 Build ISO](modules/09-build-iso/README.md) | Pemeriksaan akhir, konfigurasi GRUB, dan pengujian Live/Install |
+| **09** | [09 AI Harness](modules/09-ai-harness/README.md) | Antigravity (`agy`), `codex`, `hermes`, `opencode`, `aether-voice` (`faster-whisper-small`), `playwright` + Chromium, dan tool kontrol desktop |
+| **10** | [10 Branding & Fix](modules/10-branding-dan-fix/README.md) | Plymouth `aether-logo`, blur fix GLX, sinkronisasi taskbar/widget, Calamares *Try or Install Aether OS*, dan fix Panel Studio |
+| **11** | [11 Build ISO](modules/11-build-iso/README.md) | Konfigurasi boot GRUB (`payloads/grub.cfg`), pemeriksaan akhir, dan generate ISO |
 
 ---
 
-## 2. Tahap AI Harness, Patch Blur & Branding Installer (`scripts/` & `payloads/`)
+## 2. Konfigurasi Menu Boot GRUB (Tab Boot Cubic)
 
-Setelah modul `00` sampai `08` selesai diterapkan di Terminal Cubic, jalankan skrip di [`scripts/`](scripts/README.md) dengan urutan berikut (semua file `.tar.gz` yang dibutuhkan sudah tersedia langsung di folder [`payloads/`](payloads) tanpa perlu server eksternal):
-
-```bash
-cd /tmp/aether-kubuntu-remaster/scripts
-
-# 1. Pasang AI Harness (Hermes, Codex, OpenCode, Faster-Whisper, Playwright Chromium, aether-voice)
-bash install-aether-ai.sh
-
-# 2. Terapkan tema Plymouth aether-logo & hotfix dasar
-bash apply-hotfix.sh
-
-# 3. Terapkan patch kompatibilitas blur KWin/Kvantum & GLX
-bash apply-blur-fix.sh
-
-# 4. Sinkronkan launcher taskbar & widget desktop ke /etc/skel
-bash apply-desktop-sync.sh
-
-# 5. Terapkan branding Calamares & dialog PyQt5 "Try or Install Aether OS"
-bash apply-installer-brand.sh
-
-# 6. Pasang Aether Panel Studio system-wide (/opt/AetherPanelStudio) & perbaiki izin +x .desktop
-bash apply-panel-studio-fix.sh
-
-# 7. Rapikan ownership akhir & perbarui initramfs
-bash polish-aether.sh
-```
+Setelah menyelesaikan sesi `00` s/d `10` dan keluar dari Terminal Cubic (klik **Next**), pada tab **Boot** (`boot/grub/grub.cfg`), samakan isinya dengan [`payloads/grub.cfg`](payloads/grub.cfg) agar menu boot menampilkan **"Try or Install Aether OS"** dan **"Aether OS (safe graphics)"**, lalu klik **Generate** untuk membangun berkas ISO.
 
 ---
 
-## 3. Konfigurasi Menu Boot GRUB (Tab Boot Cubic)
+## 3. Struktur Direktori
 
-Setelah keluar dari Terminal Cubic (klik **Next**), pada tab **Boot** (`boot/grub/grub.cfg`), samakan isinya dengan [`payloads/grub.cfg`](payloads/grub.cfg) agar menu boot menampilkan **"Try or Install Aether OS"** dan **"Aether OS (safe graphics)"**, lalu klik **Generate** untuk membangun berkas ISO.
-
----
-
-## 4. Struktur Direktori
-
-- `modules/` — Sesi modular `00` s/d `09` (`skel/` untuk `/etc/skel`, `root/` untuk `/`, dan `config/` untuk fragmen INI yang digabung dengan `tools/merge-kconfig.py`).
-- `scripts/` — Skrip otomatisasi AI harness, patch blur, sinkronisasi desktop, dan branding installer.
+- `modules/` — Sesi modular `00` s/d `11` (`skel/` untuk `/etc/skel`, `root/` untuk `/`, dan `config/` untuk fragmen INI yang digabung dengan `tools/merge-kconfig.py`).
+- `scripts/` — Skrip otomatisasi yang dipanggil oleh sesi `09` dan `10` (lihat [scripts/README.md](scripts/README.md)).
 - `payloads/` — Paket payload `.tar.gz` dan `grub.cfg` yang digunakan langsung oleh `scripts/`.
 - `tools/` — Utilitas pendukung (`merge-kconfig.py` dan `build-pdf.py`).
 - `docs/` — Dokumentasi arsitektur, peta fitur ke kode ([docs/peta-fitur-ke-kode.md](docs/peta-fitur-ke-kode.md)), alur presentasi ([docs/presentasi.md](docs/presentasi.md)), screenshot, dan PDF per sesi ([docs/pdf/Panduan-Aether-Per-Sesi.pdf](docs/pdf/Panduan-Aether-Per-Sesi.pdf)).
-- `private-assets/` — Aset tema/ikon/font/wallpaper lokal (lihat [ASSETS.md](ASSETS.md); disertakan penuh pada arsip rilis `aether-kubuntu-remaster-final.tar.gz`).
+- `private-assets/` — Aset lokal (font, ikon, tema, wallpaper, dan binary `bin/agy` `237 MB`; disertakan penuh pada arsip Release `aether-kubuntu-remaster-final.tar.gz`).
